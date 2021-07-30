@@ -1,0 +1,582 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <!-- ready for depoloyment! -->
+  <head>
+    <title>Roxy | Example Webiste</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- styles icons from font awsome -->
+    <script
+    src="https://kit.fontawesome.com/88ea6b8356.js"
+    crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+    <!-- this will begin the banner section layer -->
+    <section class="showcase">
+      <header>
+        <div class="respon-menu">
+
+          <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'aboutus' %}">About us</a>
+                <a href="{% url 'contact' %}">Contact us</a>
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'signup' %}">Signup</a>
+                
+              </div>
+
+            <div class="meny-butt">
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div class="respon-title">
+              <div class="title-h">
+                  Roxy
+              </div>
+            </div>
+            
+      </div>
+
+        <div class="logo col-2 none">
+          <h2 class="logo">Roxy</h2>
+        </div>
+        <div class="col-2 none">
+          <div class="menu-sec">
+            <ul>
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'aboutus' %}">About Us</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'signup' %}">Signup</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- <div class="toggle"></div> -->
+      </header>
+
+      <video src="{% static './img/video.mp4' %}" muted loop autoplay></video>
+      <div class="overlayy"></div>
+      <!-- <div class="text">
+        <h2>Health </h2>
+        <h3>Is Wealth</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis optio illum, ea omnis dolores vitae ab quod minus molestiae tenetur earum eos aliquam deserunt reprehenderit labore a. Illo, inventore culpa!</p>
+      </div> -->
+
+      <div class="banner-text">
+        <div class="title-banner">
+          <h1>Eat to <br>
+          <span class="special-text">Heal</span></h1>
+        </div>
+        <div class="banner-para">
+          <p>
+          There are many examples of how the body repairs itself; the liver regenerates; intestines regenerate their lining; bones grow back; lungs repair after quitting smoking; and more. </p>
+        </div>
+      </div>
+
+      <ul class="social">
+        <li><a href=""><i class="fab fa-facebook fa-2x"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+      </ul>
+  
+
+      
+    </section>
+
+
+ <!-- will begin the  -->
+
+ <!-- the three box section that with things we can help you with -->
+ <div class="three-box-sec">
+  <div class="main-sec-title">
+    <h1>We Offer</h1>
+  </div>
+
+   <div class="small-container">
+     
+     <div class="row">
+       <div class="col-3 box">
+         <!-- simple logo image -->
+         <img src="{% static './img/all_online.png' %}" width="100px
+         " alt="">
+         <h3>Virtual Consulation</h3>
+         <p>Due to the pandemic all of our consultations are currently taking place online to protect our health and yours. Application forms will further explain.
+         </p>
+        
+         <div class="butt"><a href="#">Persoanl Shopper</a>  &#10230;</div>
+       </div>
+
+       <div class="col-3 box">
+        <!-- simple logo image -->
+        <img src="{% static './img/wave.png' %}" width="100px
+        " alt="">
+        <h3>Frequency Therapy</h3>
+        <p>New research has proved that wave frequency can be used to help the body heal itself. We are strong advocates for this technology and are confident that it is the future!
+
+        </p>
+        <div class="butt"><a href="#">Persoanl Shopper</a>  &#10230;</div>
+      </div>
+
+      <div class="col-3 box">
+        <!-- simple logo image -->
+        <img src="{% static './img/personal-shopper.png' %}" width="100px
+        " alt="">
+        <h3>Personal Shopper</h3>
+        <p>Shopping and planning meals is difficult. We provide new services to have a certified nutritionist join you on your next shopping trip. Shop Local.
+
+        
+        </p>
+        <div class="butt"><a href="#">Eat Local</a>  &#10230;</div>
+      </div>
+
+
+
+     </div>
+   </div>
+ </div>
+
+ <!-- two part section -->
+<div class="two-part-sec">
+  <div class="large-conatiner">
+    <div class="row">
+      <div class="col-2-l">
+        <img src="{% static './img/healthy.jpg' %}" width="100%" alt="">
+      </div>
+      <div class="col-2-l padding-b">
+        <h2>Healing Physically <br> and Spirtually, <br> Starts Here</h2>
+        <p>When we talk about healing, we’re not just talking about the physical kind where you cut yourself, put a band aid over it and wait for nature to run it’s course. Although that analogy can still be quite applicable in this case. Today we’re talking about emotional healing. Emotional healing is the ability to acknowledge events and circumstances in our lives that may hinder us from moving forward. 
+
+        
+        
+        </p>
+        <div class="butt width-butt"><a href="#">Eat Local</a>        &#10230;</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- this will begin the banner section -->
+
+<div class="four-banner-sec">
+  <!-- title section -->
+  
+  <div class="large-conatiner">
+    <div class="title-side">
+      <h2>Featured Health Topics</h2>
+    </div>
+    <div class="row">
+      <div class="col-4 border-side">
+        <div class="container">
+          <img src="{% static './img/corona.png' %}" alt="Norway" style="width:100%;">
+          <div class="text-block"> 
+            <h4>Cornovirus</h4>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-4 border-side">
+        <div class="container">
+          <img src="{% static './img/food-cc.png' %}" alt="Norway" style="width:100%;">
+          <div class="text-block food-c"> 
+            <h4>Nutrion</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-4 border-side">
+        <div class="container">
+          <img src="{% static './img/women_kids.png' %}" alt="Norway" style="width:100%;">
+          <div class="text-block women"> 
+            <h4>Parenthood</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-4 border-side">
+        <div class="container">
+          <img src="{% static './img/free!.png' %}" alt="Norway" style="width:100%;">
+          <div class="text-block free"> 
+            <h4>Womens Health</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- building a raising the bar section with some small icons and than creating the eating local table -->
+<div class="blue-banner">
+  <div class="large-conatiner top-pad">
+    <div class="row">
+      <div class="col-2-l increase-font">
+        <h1>A nutritionist is an <span class="i">expert</span> in the use of food and <span class="i">nutrition</span> to promote health and manage diseases</h1>
+        <small class="">We offer care from a team of foward thinking nutrionist all over the world.</small>
+        <br>
+        <br>
+        <div class="butt width-butt"><a href="#">Read our quality gurantee </a> &#10230;</div>
+      </div>
+      <div class="col-2-l">
+        <div class="sec">
+          <div class="half">
+            <i class="fas fa-search fa-3x" style="color: #420039;"></i>
+          </div>
+          <div class="half">
+            <p>Research has been conducted to help us prove that all of our forms of healing work and are officially backed up through many trial experiments.
+            
+            </p>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="half">
+            <i class="far fa-check-square fa-3x" style="color: #420039;"></i>
+          </div>
+          <div class="half">
+            <p>Feeling random bursts of happiness is a very good indication that you are on the mend. It shows you are starting to enjoy life again and starting to see the good life has to offer.
+            
+            </p>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="half">
+            <i class="fas fa-plus-square fa-3x" style="color: #420039;"></i>
+          </div>
+          <div class="half">
+            <p>Like everything in life, good things take time, and it’s important to remember that when it comes to healing from within, it can feel like a bit of a dance.</p>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- starting the what is the difference section -->
+
+<div class="what-is-the-diff">
+  <div class="title-diff"><h1>What is the difference</h1></div>
+  <div class="small-container added-pad">
+    <div class="row">
+      <div class="col-2-e">
+        <h3>Dietitian</h3>
+        <p>
+          A registered dietitian is a nutrition professional who is the most credible and objective source of nutrition information. They are trained in nutrition to prevent disease. Registered Dietitian Nutritionists (RDN) must complete a four year program in Nutrition from an accredited University.</p>
+        <img src="{% static './img/Dietian.png' %}" width="100%"  alt="">
+      </div>
+
+      <div class="col-2-e">
+        <h3>Nutritionist</h3>
+        <p>
+          In clinical practice, a specialist in nutrition. Nutritionists can help patients with special needs, allergies, health problems, or a desire for increased energy or weight change devise healthy diets. Some nutritionists in private practice are well- trained, hold a degree and are licensed.</p>
+        
+        <img src="{% static './img/Nurt.png' %}" width="100%" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="eat-local-sec">
+  <div id="London" class="tabcontent">
+    <div class="title-main"><h1>Eat Local</h1></div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Apples</h2>
+        <img src="{% static './img/apples.jpg' %}" width="100%" alt="">
+      </div>
+      <div class="col-6">
+        <h2>Carrots</h2>
+        <img src="{% static './img/carrot.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Beets</h2>
+        <img src="{% static './img/beets.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Grapes</h2>
+        <img src="{% static './img/grape.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Blueberries</h2>
+        <img src="{% static './img/blub.jpg' %}" width="100%"  alt="">
+      </div>
+      <div class="col-6">
+        <h2>Broccoli</h2>
+        <img src="{% static './img/broccoli .jpg' %}" width="100%"  alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <div class="title-main"><h1>Eat Local</h1></div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Garlic</h2>
+        <img src="{% static './img/garlic.jpg' %}" width="100%" alt="">
+      </div>
+      <div class="col-6">
+        <h2>Green Beans</h2>
+        <img src="{% static './img/green_beans.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Corn</h2>
+        <img src="{% static './img/corn.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Celery</h2>
+        <img src="{% static './img/celery.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Cauliflower</h2>
+        <img src="{% static './img/Cauliflower .jpg' %}" width="100%"  alt="">
+      </div>
+      <div class="col-6">
+        <h2>Cantaloupe</h2>
+        <img src="{% static './img/cantaloupe.jpg' %}" width="100%"  alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <div class="title-main"><h1>Eat Local</h1></div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Onions</h2>
+        <img src="./img/onions.jpg" width="100%" alt="">
+      </div>
+      <div class="col-6">
+        <h2>Kale</h2>
+        <img src="{% static './img/kale.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Sprouts</h2>
+        <img src="{% static './img/sprouts.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Shallots</h2>
+        <img src="{% static './img/shallots.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Endive</h2>
+        <img src="{% static './img/endive.jpg' %}" width="100%"  alt="">
+      </div>
+      <div class="col-6">
+        <h2>Mushrooms</h2>
+        <img src="{% static './img/mushrooms.jpg' %}" width="100%"  alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div id="Oslo" class="tabcontent">
+    <div class="title-main"><h1>Eat Local</h1></div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Apples</h2>
+        <img src="{% static './img/apples.jpg' %}" width="100%" alt="">
+      </div>
+      <div class="col-6">
+        <h2>Carrots</h2>
+        <img src="{% static './img/carrot.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Beets</h2>
+        <img src="{% static './img/beets.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Grapes</h2>
+        <img src="{% static './img/grape.jpg' %}" width="100%"   alt="">
+      </div>
+      <div class="col-6">
+        <h2>Blueberries</h2>
+        <img src="{% static './img/blub.jpg' %}" width="100%"  alt="">
+      </div>
+      <div class="col-6">
+        <h2>Broccoli</h2>
+        <img src="{% static './img/broccoli .jpg' %}" width="100%"  alt="">
+      </div>
+    </div>
+  </div>
+  
+  <button class="tablink" onclick="openCity('London', this, 'rgb(238, 228, 228)')" id="defaultOpen">Summer</button>
+  <button class="tablink" onclick="openCity('Paris', this, 'rgb(245, 206, 138)')">Fall</button>
+  <button class="tablink" onclick="openCity('Tokyo', this, 'rgb(158, 190, 189)')">Winter</button>
+  <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Spring</button>
+  
+  
+</div>
+
+
+<!-- meet are awsome team of nutrionist  -->
+<div class="meet-the-team">
+
+  <div class="main-banner-title">
+   <h2>Meet The Team</h2>
+  </div>
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3-l">
+        <img src="{% static './img/bosssss1.png' %}" 
+        alt="">
+        <div class="info">
+          <div class="name"><h1>Janes Eversen</h1></div>
+          <div class="posistion">Founder Dietitian</div>
+        </div>
+      </div>
+
+      <div class="col-3-l">
+        <img src="{% static './img/bosssss2.png' %}" 
+        alt="">
+        <div class="info">
+          <div class="name"><h1>Kelly Miles</h1></div>
+          <div class="posistion">Certified Holostic Nutritionist</div>
+        </div>
+      </div>
+
+      <div class="col-3-l">
+        <img src="{% static './img/bosssss3.png' %}" 
+         alt="">
+        <div class="info">
+          <div class="name"><h1>Brando Jay, MD</h1></div>
+          <div class="posistion">Associate of Family Medicine </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+</div>
+
+<div class="hoz-banner">
+  <img src="{% static './img/Post-8.png' %}" alt="">
+  
+</div>
+
+
+
+
+
+<!-- this will be footer section  -->
+<div class="footer-sec-black">
+  <div class="large-conatiner">
+    <div class="row">
+      <div class="col-5">
+        <div class="logo">
+          <i class="fas fa-leaf" style="color: aliceblue;" ></i> Roxy 
+        </div>
+        <p class="copyright" >Copyright 2020 - Estrella Vargas | Teley </p>
+      </div>
+      <div class="col-4-s">
+        <ul>
+          <li><a class="bolded" href="#">Products</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Login</a></li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-4-s">
+        <ul>
+          <li><a class="bolded" href="#">About us</a></li>
+          <li><a href="#">Learn More</a></li>
+          <li><a href="#">Featured</a></li>
+          <li><a href="#">Careers</a></li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-4-s">
+        <ul>
+          <li><a class="bolded" href="#">Resources</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Book a Demo</a></li>
+          <li><a href="#">Server Status</a></li>
+     
+        </ul>
+      </div>
+
+      <div class="col-4-s">
+        <ul>
+          <li><a class="bolded" href="#">Get In Touch</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Thanks for your support</a></li>
+
+        </ul>
+        <div class="social-section">
+          <ul>
+            <li><a href=""><i class="fab fa-facebook fa-1x" ></i></a></li>
+            <li><a href=""><i class="fab fa-twitter fa-1x"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-1x"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+  </body>
+</html>

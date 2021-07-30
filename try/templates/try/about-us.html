@@ -1,0 +1,140 @@
+{% extends 'try/main.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- the main banner with our story section -->
+<div class="this-is-our-story">
+    <div class="small-container center-items">
+        <!-- all of this will be text alugn center -->
+        <div class="our-story-starts-here">
+            <h1>Roxys Story</h1>
+        </div>
+        <div class="short-summary">
+            <p>
+                When I began this company it was just me and my husband. We had full time jobs so it was kinda like our side hustle. After I was dignosed with a serious diease I was determind to heal myself naturally. After receiving several certifications in nutrition, I decided to try and help others. Thank you for being part of our story. We believe that everyone should Eat To Heal.</p>
+        </div>
+        <!-- founfers picture -->
+        <img src="{% static './img/our-story.png' %}" width="50%" alt="">
+    </div>
+</div>
+
+<!-- whats new with us section -->
+<div class="why-happy">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="sqaure-s">
+                    <div class="text">
+                        <h1>10500+</h1>
+                        <h4>Customers</h4>
+
+                    </div>
+                    
+                </div>
+                <div class="sqaure-m">
+                    <div class="text m">
+                        <h1>8000+</h1>
+                    <h4>Trips</h4>
+
+                    </div>
+                    
+                </div>
+                <div class="sqaure-l">
+                    <div class="text l">
+                        <h1>500+</h1>
+                        <h4>Locations</h4>
+
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            <div class="col-2 padding-left">
+                <div class="center">
+                    <h1>we love our Customers</h1>
+                    
+                </div>
+                <p>Booking through us will guarantee that all our customers are offered exceptional customer service year round. We have many customer reviews, and always receive great feedback from our diverse clientele. We enjoy making your comfort our priority. Our locations all around the world have been reviewed by many of our certified team members to ensure that all the apartments are clean and look amazing for the next guest. We pride ourselves in being globally recognized as one of the best travel agencies and we will continue to make that our priority. We can continue to prioritize your comfort thanks to many of our partners. You are invited to read the Blog page of this website where many travel bloggers post their experiences. They also make many recommendations to great restaurants that can be found minutes away from any of our houses. Thank you for booking with Valencia and enjoy your stay overseas. 
+                </p>
+                <div class="butt width-butt"><a href="#">Read More</a>        &#10230;</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- carsoul with destinations section -->
+<div class="car-sec-middle">
+    <div class="title-sec-anm">
+
+        <div class="patterns">
+            <svg width="100%" height="100%">
+              <defs>
+                <pattern id="polka-dots" x="0" y="0"                    width="100" height="100"
+                         patternUnits="userSpaceOnUse">
+                  <!-- <circle fill="rgb(110, 49, 49)" cx="25" cy="25" r="3"></circle> -->
+                </pattern>  
+                  <style>
+               @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+             </style>
+                
+              </defs>
+                        
+              <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+               
+              
+             
+           <text x="50%" y="60%"  text-anchor="middle">
+            Travel
+           </text>
+           </svg>
+          </div>
+
+
+    </div>
+    
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="{% static './img/travel-1.jpg' %}" alt="">
+            <div class="overlay">South Island, New Zealand
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-2.jpg' %}" alt="">
+            <div class="overlay">Barcelona</div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-3.jpg' %}" alt="">
+            <div class="overlay">Bali</div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-4.jpg' %}" alt="">
+            <div class="overlay">Florence</div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-5.jpg' %}" alt="">
+            <div class="overlay">Amsterdam</div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-6.jpg' %}" alt="">
+            <div class="overlay">Costa Rica</div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-7.jpg' %}" alt="">
+            <div class="overlay">Rio De Janerio</div>
+        </div>
+        <div class="item">
+            <img src="{% static './img/travel-8.jpg' %}" alt="">
+            <div class="overlay">Tahiti</div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
