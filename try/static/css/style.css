@@ -444,8 +444,8 @@ to choose my set fontx
     padding: 5px;
 }
 .col-4{
-    flex-basis: 25%;
-    min-width: 250px;
+    flex-basis: 20%;
+    min-width: 200px;
 }
 .four-banner-sec{
     padding-bottom: 50px;
