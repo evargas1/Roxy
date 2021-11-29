@@ -406,9 +406,7 @@ to choose my set fontx
     position: relative;
     
 }
-.container img{
-    border-radius: 20px;
-}
+
   
   /* Bottom right text */
 .text-block {
@@ -444,8 +442,11 @@ to choose my set fontx
     padding: 5px;
 }
 .col-4{
-    flex-basis: 20%;
-    min-width: 200px;
+    flex-basis: 30%;
+    min-width: 150px;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
 }
 .four-banner-sec{
     padding-bottom: 50px;
